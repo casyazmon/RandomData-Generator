@@ -9,9 +9,9 @@
 	{
 		
 		private $host = "localhost";
-		private $db_name = "testdb";
-		private $password = "hisable";
-		private $username = "root";
+		private $db_name = "testdb"; //db name
+		private $password = " "; // password
+		private $username = "root";  // db username
 
 		// get the database connection
 		public function getConnection()

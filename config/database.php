@@ -33,13 +33,7 @@ class Database {
         return ($success) ? $row: [];
     }
 
-    public function myCreate($table, $value)
-    {
-        $sql = "INSERT INTO $table wd VALUES ($value)";
-        $stm = $this->pdo->prepare($sql);
-        $status = $stm->execute();
-        return ($status) ? $this->pdo->lastInsertId() : false;
-    }
+    
     public function create($table, $data) {
         $columns = array_keys($data);
        // print_r($columns);
